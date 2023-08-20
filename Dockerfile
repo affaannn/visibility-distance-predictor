@@ -1,6 +1,6 @@
 FROM python:3.7
 COPY . /app
 WORKDIR /app
-RUN pip install --progress-bar off -r requirements.txt
+RUN pip install -r requirements.txt
 ENTRYPOINT [ "python" ]
 CMD [ "main.py" ]
